@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="upper-contain">
+            <input type="text" placeholder="0" value="" class="display" id="displaynums">
+        <div class="right">
+            <div class="lines1" id="reset">C</div>
+            <div class="lines1" id="correct">Correct</div>
+            <div id="toggle">
+                <div id="round"></div>
+            </div>
+        </div>
+        </div>
+        <div class="contain">
+            <div class="fourth">
+                <div class="lines numbers">7</div>
+                <div class="lines numbers">8</div>
+                <div class="lines numbers">9</div>
+                <div class="lines arth" style="background: linear-gradient(#494949,rgb(39, 39, 39)); color: white;">+</div>
+            </div>
+            <div class="third">
+                <div class="lines numbers">4</div>
+                <div class="lines numbers">5</div>
+                <div class="lines numbers">6</div>
+                <div class="lines arth" style="background: linear-gradient(#494949,rgb(39, 39, 39)); color: white;">-</div>
+            </div>
+            <div class="second">
+                <div class="lines numbers" >1</div>
+                <div class="lines numbers" >2</div>
+                <div class="lines numbers"  >3</div>
+                <div value="*" class="lines arth" style="background: linear-gradient(#494949,rgb(39, 39, 39)); color: white;">*</div>
+            </div>
+            <div class="fist">
+                <div class="lines numbers" >0</div>
+                <div class="lines numbers" >.</div>
+                <div class="lines" id="ans" style="background: linear-gradient(#494949,rgb(39, 39, 39)); color: white;">=</div>
+                <div class="lines arth" style="background: linear-gradient(#494949,rgb(39, 39, 39)); color: white;">/</div>
+            </div>
+        </div>
+        </div>
+</body>
+<script src="style.js"></script>
+</html>

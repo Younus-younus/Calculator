@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    border: 1px solid black;
+    width: 400px;
+    height: 570px;
+    margin-top: 4px;
+    padding-left: 5px;
+    border-radius: 5px;
+    background: linear-gradient(#e9dfdf,rgb(153, 151, 151));
+    box-shadow: 2px 2px 4px black;
+}
+.contain {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.upper-contain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.display{
+    border: 1px solid black;
+    width: 90%;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* background: linear-gradient(#e9dfdf,rgb(165, 163, 163)); */
+    background-color: #185814;
+    box-shadow: inset 2px 2px 4px black;
+    color: white;
+    font-family: "Big Shoulders Stencil Display", sans-serif;
+    font-size: 5rem;
+    font-style: normal;
+    text-align: end;
+    padding: 0px 1rem 0px 0px;
+}
+#toggle {
+    width: 70px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 2px;
+    margin-top: 4px;
+    display: flex;
+    border-radius: 25px;
+}
+#round {
+    width: 28px;
+    height: 28px;
+    border: 1px solid black;
+    background: linear-gradient(rgb(255, 238, 0),rgb(255, 0, 0));
+    border-radius: 50%;
+}
+
+#change {   
+ position: absolute;
+ left: 200px;
+ top: 10px;
+ color: white;
+ text-shadow: 
+ -1px -1px 0 black,
+  1px -1px 0 black,
+ -1px  1px 0 black,
+  1px  1px 0 black;
+}
+/* .first {
+  display: flex;
+} */
+/* #arthplus{
+    background: linear-gradient(#494949,rgb(39, 39, 39));
+    color: white;
+}
+#arthminus{
+    background: linear-gradient(#494949,rgb(39, 39, 39));
+    color: white;
+}
+#arthmul{
+    background: linear-gradient(#494949,rgb(39, 39, 39));
+    color: white;
+}
+#arthdiv{
+    background: linear-gradient(#494949,rgb(39, 39, 39));
+    color: white;
+}
+#ans {
+    background: linear-gradient(#494949,rgb(39, 39, 39));
+    color: white;
+} */
+
+.lines{
+    border: 1px solid black;
+    width: 78px;
+    height: 70px;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 15px;
+    border-radius: 10px;
+    background: linear-gradient(#e9dfdf,rgb(165, 163, 163));
+    box-shadow: 2px 2px black;
+}
+.lines1{
+    border: 1px solid black;
+    width: 78px;
+    height: 30px;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background: rgb(175, 23, 23);
+    color: white;
+    box-shadow: 2px 2px black;
+}
+.lines:hover {
+    box-shadow: 0px 0px;
+}
+.lines1:hover{
+    box-shadow: 0px 0px;
+}
+.right {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.input {
+    background: #242f3f;
+    border: none;
+    box-shadow: 0px 3px 10px rgba(84,84,84,0.1);
+    margin-bottom: 10px;
+}
+
+.buttons {
+    border-radius: 50%;
+    height: 60px;
+    width: 70px;
+    background: transparent;
+    color: white;
+    box-shadow: -8px -8px 10px rgba(255,255,255,0.1);
+    font-size: 40px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 470px) {
+    .lines {
+        width: 58px;
+        height: 50px;
+    }
+    .container {
+        width: 300px;
+        height: 480px;
+    }
+    .buttons {
+        height: 50px;
+        width: 60px;
+    }
+    .input {
+        height: 80px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .lines {
+        width: 48px;
+        height: 40px;
+    }
+    .container {
+        width: 250px;
+        height: 450px;
+    }
+    .buttons {
+        height: 40px;
+        width: 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .input {
+        height: 80px;
+        width: 210px;
+        margin-left: 10px;
+    }
+    .upper-contain {
+        margin-left: 0;
+    }
+    #toggle {
+        margin-left: 0;
+        width: 50px;
+    }
+}
